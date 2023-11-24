@@ -1,0 +1,17 @@
+/* الكل = * */
+* {
+  /* علشان اشيل المارجين من كل العناصر */
+  margin: 0;
+  /* علشان مفيش عنصر يخرج عن اطار الحجم الى محدده */
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
