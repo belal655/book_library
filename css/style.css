@@ -5,13 +5,146 @@
   /* علشان مفيش عنصر يخرج عن اطار الحجم الى محدده */
   box-sizing: border-box;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin-left: 100px;
+  margin-right: 100px;
+}
 
 .header {
   padding: 20px;
+}
+.header h1 {
+  color: #3caf9e;
+}
+.header h1 span {
+  color: #777;
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navebar {
+  display: flex;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.navebar .container ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.navebar .container ul li {
+  border-right: 1px solid #eee;
+  padding: 15px;
+}
+
+.navebar .container ul li a {
+  margin-left: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.statics {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: linear-gradient(#3caf9e, #f1f1f1);
+}
+
+.statics .container {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.statics .container .col {
+  text-align: center;
+  justify-items: center;
+  display: grid;
+}
+
+.statics .container .col .image {
+  width: 100px;
+  height: 100px;
+  justify-self: center;
+}
+
+.statics .container .col p {
+  color: #39ac9b;
+  line-height: 1.5;
+}
+
+.statics .container .col .image + p.img {
+  line-height: 2;
+  margin-top: -10px;
+}
+
+.statics .container .col .image img {
+  width: 100px;
+  height: 100px;
+}
+
+/* start books */
+
+.books {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f1f1f1;
+}
+
+.books .container {
+  display: grid;
+  gap: 140px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+@media (max-width: 876px) {
+  .books .container {
+    gap: 20px;
+  }
+}
+
+.books .container .card {
+  border: 0.5px solid #777;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  justify-items: center;
+  display: grid;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.books .container .card:hover {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  box-shadow: #777 0px 5px 5px 2px;
+}
+
+.books .container .card a {
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.books .container .card a.n {
+  color: black;
+}
+
+.books .container .card a.na {
+  color: #3caf9e;
 }
