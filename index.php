@@ -1,0 +1,132 @@
+<?php include ('server.php')?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helwan Library</title>
+    <!-- link to css file -->
+    <link rel="stylesheet" href="./css/master.css" />
+</head>
+
+<body>
+    <div class="header">
+        <!-- علشان اتحكم فى تنسيقات 
+      cssال -->
+        <div class="container">
+            <h1><span>H</span>elwan <span>L</span>ibrary</h1>
+            <div class="image">
+                <img src="./images/1200px-Helwan_University_Arabic_logo.svg.jpg" alt="logo" />
+            </div>
+        </div>
+    </div>
+    <!-- start navebar -->
+    <div class="navebar">
+        <div class="container">
+            <ul>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="./login.php">Login</a></li>
+                <li><a href="./Contactus.php">Contact us</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- end navbar -->
+    <!-- start statics -->
+    <div class="statics">
+        <div class="container">
+            <!-- start col -->
+            <div class="col">
+                <div class="image">
+                    <img src="./images/digital-library.svg" alt="" />
+                </div>
+                <p class="img">8,000,000 Visitors per month</p>
+                <p>
+                    More than 8 million visitors who are interested in Arabic books
+                    visit the Noor Library website every month around the world
+                </p>
+            </div>
+            <!-- end col -->
+            <!-- start col -->
+            <div class="col">
+                <div class="image">
+                    <img src="./images/home_search.svg" alt="" />
+                </div>
+                <p class="img">100,000 A daily search</p>
+                <p>More than 100,000 searches for an Arabic book happen daily</p>
+            </div>
+            <!-- end col -->
+            <!-- start col -->
+            <div class="col">
+                <div class="image">
+                    <img src="./images/mobile-app.svg" alt="" />
+                </div>
+                <p class="img">891,306 Book</p>
+                <p>
+                    Thousands of books published on Noor Library, including what was
+                    published by the author himself or the library team
+                </p>
+            </div>
+            <!-- end col -->
+            <!-- start col -->
+            <div class="col">
+                <div class="image">
+                    <img src="./images/online-education.svg" alt="" />
+                </div>
+                <p class="img">292,229 Author</p>
+                <p>
+                    Noor Library aims to create the largest database of Arabic book
+                    authors throughout history
+                </p>
+            </div>
+            <!-- end col -->
+        </div>
+    </div>
+    <!-- end statics -->
+    <!-- start books -->
+    <div class="books">
+        <div class="container">
+            <!-- start card -->
+            <div class="card">
+                <div class="image">
+                    <a href="https://drive.google.com/file/d/143wEvpbzxnmwHcE4X4fOpC0CECydFjWV/view?usp=drive_link"><img
+                            src="./images/book1.png" alt="" /></a>
+                </div>
+                <a class="n" href="">Shadow Prince - Engineer On The Road</a>
+                <a class="na" href="">Abd Allah Ghalib AlBarghouthi</a>
+            </div>
+            <!-- end card -->
+            <!-- start card -->
+            <div class="card">
+                <div class="image">
+                    <a href=""><img src="./images/book2.png" alt="" /></a>
+                </div>
+                <a class="n" href="">Research Methodology</a>
+                <a class="na" href="">D Muhammad Sarhan Ali Al Mahmoudi </a>
+            </div>
+            <!-- end card -->
+            <!-- start card -->
+            <div class="card">
+                <div class="image">
+                    <a href=""><img src="./images/book3.png" alt="" /></a>
+                </div>
+                <a class="n" href="">Sahih Bukhari </a>
+                <a class="na" href="">Muhammad Bin Ismail Albukhari </a>
+            </div>
+            <!-- end card -->
+            <!-- start card -->
+            <div class="card">
+                <div class="image">
+                    <a href=""><img src="./images/book4.png" alt="" /></a>
+                </div>
+                <a class="n" href="">The First Time I Reflect On The Qur’an</a>
+                <a class="na" href="">Adel Muhammad Khalil </a>
+            </div>
+            <!-- end card -->
+        </div>
+    </div>
+    <!-- end books -->
+</body>
+
+</html>

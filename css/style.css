@@ -1,150 +1,128 @@
-/* الكل = * */
 * {
-  /* علشان اشيل المارجين من كل العناصر */
   margin: 0;
-  /* علشان مفيش عنصر يخرج عن اطار الحجم الى محدده */
-  box-sizing: border-box;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.header {
-  padding: 20px;
-}
-.header h1 {
-  color: #3caf9e;
-}
-.header h1 span {
-  color: #777;
-}
-
-.header .container {
-  display: flex;
-  justify-content: space-between;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
   align-items: center;
 }
-
-.navebar {
-  display: flex;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-}
-
-.navebar .container ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-}
-
-.navebar .container ul li {
-  border-right: 1px solid #eee;
-  padding: 15px;
-}
-
-.navebar .container ul li a {
-  margin-left: 30px;
-  color: black;
-  text-decoration: none;
-}
-
-.statics {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-image: linear-gradient(#3caf9e, #f1f1f1);
-}
-
-.statics .container {
-  display: grid;
-  gap: 80px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
-
-.statics .container .col {
+.continar {
+  height: fit-content;
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 300px;
+  border-radius: 50px;
   text-align: center;
-  justify-items: center;
-  display: grid;
+  border: 2px solid #3caf9e;
 }
 
-.statics .container .col .image {
-  width: 100px;
-  height: 100px;
-  justify-self: center;
+h1 {
+  margin-bottom: 10px;
+  color: #3caf9e;
 }
 
-.statics .container .col p {
-  color: #39ac9b;
-  line-height: 1.5;
+input {
+  background-color: transparent;
+  color: #3caf9e;
+  border-bottom: 1px solid #3caf9e;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
 }
 
-.statics .container .col .image + p.img {
-  line-height: 2;
-  margin-top: -10px;
+input:focus {
+  outline: none;
 }
 
-.statics .container .col .image img {
-  width: 100px;
-  height: 100px;
+label {
+  color: #3caf9e;
+  line-height: 1.8;
 }
 
-/* start books */
-
-.books {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #f1f1f1;
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #3caf9e;
 }
 
-.books .container {
-  display: grid;
-  gap: 140px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+button.lg {
+  width: 10em;
+  margin-top: 10px;
 }
 
-@media (max-width: 876px) {
-  .books .container {
-    gap: 20px;
+button.lg:hover {
+  animation: none;
+}
+
+button + span {
+  display: block;
+  color: #3caf9e;
+}
+
+button:hover {
+  animation: move 2s alternate infinite;
+}
+@keyframes move {
+  20% {
+    transform: scale(1.5);
+  }
+  40% {
+    transform: scale(0.8);
+  }
+  80% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0.8);
   }
 }
 
-.books .container .card {
-  border: 0.5px solid #777;
-  padding: 10px;
-  border-radius: 15px;
-  text-align: center;
-  justify-items: center;
-  display: grid;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+span {
+  padding-top: 5px;
 }
 
-.books .container .card:hover {
-  margin-top: -20px;
-  margin-bottom: 20px;
-  box-shadow: #777 0px 5px 5px 2px;
-}
-
-.books .container .card a {
-  line-height: 1.8;
-  text-decoration: none;
-}
-
-.books .container .card a.n {
-  color: black;
-}
-
-.books .container .card a.na {
+.continar .sn {
   color: #3caf9e;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  body {
+    overflow: hidden;
+  }
+  .continar {
+    max-width: 100%;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  button {
+    width: 100px;
+    margin: 20px auto;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/* 
+// XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
